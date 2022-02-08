@@ -1,0 +1,187 @@
+  @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    background-image: url(images/pattern-background-mobile.svg);
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+  }
+
+  .container{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px 0 hsla(245, 75%, 52%, .11);
+    overflow: hidden;
+    max-width: 27.5em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+
+  .image-header img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .conteudo{
+    text-align: center;
+  }
+
+  h1{
+    color: hsl(224, 23%, 55%);
+    font-size: 1.4rem;
+    font-weight: 900;
+    padding: 1.3em 0 .8em 0    
+  }
+
+  .text {
+    color: hsl(224, 23%, 55%);
+    line-height: 1.6;
+    font-size: .95rem;
+    padding: 0 2.1em 1.4em 2.1em;
+  }
+
+  .planos{
+    background: var(--clr-neutral-blue-100);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1.5em 1.5em 1.5em;
+    padding: 1em;
+    border-radius: 10px;
+  }
+
+  .plano1{
+      display: flex;
+  }
+
+  .det-plano{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1.2em;
+    gap: .2em;
+    text-align: left;
+    font-size: .7rem;
+  }
+
+  .det-plano h2 {
+    color: hsl(224, 23%, 55%);
+    font-size: .9rem;
+  }
+
+  .det-plano p {
+    color: hsl(224, 23%, 55%);
+    font-size: .8rem;
+  }
+
+  .plano2 a{
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    font-size: .8rem;
+    opacity: 1;
+    transition: all .2s ease;
+    text-decoration: none;      
+  }
+
+  .plano2 a:hover{
+      opacity: .8;
+  }
+
+  .botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: .65em;
+    margin-bottom: 1.5em;
+  } 
+
+  .btn {
+    all: unset;
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: .95rem;
+    font-weight: 700;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    padding: 1em;
+  }
+
+  .pag-btn {
+    background: hsl(245, 75%, 52%);
+    color: white;
+    box-shadow: 0 15px 20px 0 hsla(245, 75%, 52%, .25);
+    opacity: 1;
+    transition: all .2s ease;
+  }
+
+  .pag-btn:hover {
+    opacity: .8;
+  }
+
+  .can-btn {
+    color: hsl(224, 23%, 55%);
+    transition: color .2s ease;
+  }
+  
+  .can-btn:hover {
+    color: hsl(223, 47%, 23%);
+  }
+
+  @media (min-width: 450px) {
+
+    body {
+      background: url(images/pattern-background-desktop.svg);
+      background-color: hsl(225, 100%, 94%);;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  
+    h1 {
+      font-size: 1.7rem;
+      padding-top: 1.7em;
+      padding-bottom: .7em;
+    }
+  
+    .text {
+      font-size: 1.05rem;
+      padding-left: 3em;
+      padding-right: 3em;
+    }
+  
+    .planos {
+      margin: 0 3em 2em 3em;
+      padding: 1.5em;
+    }
+  
+    .det-plano h2 {
+      font-size: 1.05rem;
+    }
+  
+    .det-plano p {
+      font-size: 1.05rem;
+    }
+  
+    .planos2 a {
+      font-size: .9rem;
+      text-decoration: none;   
+    }
+  
+    .btn {
+      margin-left: 3em;
+      margin-right: 3em;
+    }
+  
+  }
